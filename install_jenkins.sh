@@ -26,7 +26,7 @@ sudo wget https://github.com/zaproxy/zaproxy/releases/download/v2.11.1/ZAP_2_11_
 sudo chmod +x ZAP_2_11_1_unix.sh 
 sudo ./ZAP_2_11_1_unix.sh -q
 sudo tar -xvf ZAP_2.11.1_Linux.tar.gz
-curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/linux/amd64/kubectl
+curl -o kubectl https://s3.us-east-1.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
 sudo cp kubectl /usr/local/bin/
